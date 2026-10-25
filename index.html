@@ -553,11 +553,11 @@
             let faultsHtml = '';
             if (b.faults) {
                 const sections = [
-                    { name: '0x46 Critical Fault', hex: b.faults.f46 || 0, addr: 0x0046, color: '#dc2626' },
-                    { name: '0x47 Cell Fault',     hex: b.faults.f47 || 0, addr: 0x0047, color: '#dc2626' },
-                    { name: '0x48 Protection',     hex: b.faults.p48 || 0, addr: 0x0048, color: '#f59e0b' },
-                    { name: '0x49 Alarm',          hex: b.faults.a49 || 0, addr: 0x0049, color: '#f59e0b' },
-                    { name: '0x4A BMS State',      hex: b.faults.s4A || 0, addr: 0x004A, color: '#3b82f6' }
+                    { name: 'Critical Fault', hex: b.faults.f46 || 0, addr: 0x0046, color: '#dc2626' },
+                    { name: 'Cell Fault',     hex: b.faults.f47 || 0, addr: 0x0047, color: '#dc2626' },
+                    { name: 'Protection',     hex: b.faults.p48 || 0, addr: 0x0048, color: '#f59e0b' },
+                    { name: 'Alarm',          hex: b.faults.a49 || 0, addr: 0x0049, color: '#f59e0b' },
+                    { name: 'BMS State',      hex: b.faults.s4A || 0, addr: 0x004A, color: '#3b82f6' }
                 ];
                 sections.forEach(sec => {
                     const bits = [];
